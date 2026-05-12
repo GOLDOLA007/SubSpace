@@ -9,9 +9,9 @@ interface CardProps{
 export function Card(Props: CardProps){
 
     const styles = {
-        bronze: "border-orange-600 hover:border-orange-500 text-orange-600 hover:shadow-lg w-48 min-h-48",
-        silver: "border-gray-600 hover:border-gray-500 text-gray-600 hover:shadow-lg w-48 min-h-48",
-        gold: "border-yellow-600 hover:border-yellow-500 text-yellow-600 hover:shadow-lg w-64 min-h-64"
+        bronze: "border-gray-800 hover:border-orange-800 text-orange-400 hover:shadow-[0_0_15px_rgba(234,88,12,0.2)] w-48 min-h-48",
+        silver: "border-gray-800 hover:border-gray-600 text-white hover:shadow-[0_0_15px_rgba(148,163,184,0.1)] w-48 min-h-48",
+        gold: "border-gray-800 hover:border-yellow-800 text-yellow-400 hover:shadow-[0_0_20px_rgba(202,138,4,0.2)] w-64 min-h-64"
     }
 
     const buttonStyles = {
@@ -24,10 +24,11 @@ export function Card(Props: CardProps){
         <div 
             className={`
                 border 
-                border-gray-300 p-5 
+                border-zinc-800 p-5 
                 rounded-lg m-2.5
                 text-center 
-                shadow-md bg-white
+                shadow-md 
+                bg-zinc-900
                 ${styles[Props.variant]}
             `}
         >
@@ -49,7 +50,6 @@ export function Card(Props: CardProps){
                 >{Props.title}</h2>
             </div>
             
-            
             <div
                 className={`
                     flex-col
@@ -63,8 +63,9 @@ export function Card(Props: CardProps){
                         text-left
                         list-disc
                         list-inside
-                        mb-2
+                        mb-6
                         space-y-1
+                        text-zinc-400
                     `}
                 >
                     {Props.benefits.map((item) => (

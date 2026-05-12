@@ -5,7 +5,7 @@ function App() {
     <main 
       className={`
         min-h-screen
-        bg-gray-100
+        bg-zinc-950 text-zinc-50
         flex
         flex-col
         items-center
@@ -19,10 +19,12 @@ function App() {
             text-3xl
             font-bold
             text-center
-            text-gray-800
+            text-zinc-300
             text-4xl
             mb-4
-            
+            text-transparent
+            bg-clip-text
+            bg-gradient-to-r from-white to-gray-400
         `}
       >Choose your plan</h1>
 
