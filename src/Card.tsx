@@ -32,7 +32,14 @@ export function Card(Props: CardProps){
             `}
         >
 
-            <div>
+            <div
+                className={`
+                    flex-col
+                    mb-4
+                    justify-center
+                    items-center
+                `}
+            >
                 <h2 
                 className={`
                     text-xl
@@ -43,15 +50,22 @@ export function Card(Props: CardProps){
             </div>
             
             
-            <div>
+            <div
+                className={`
+                    flex-col
+                    mb-4
+                    justify-center
+                    items-center
+                    `}
+            >
                     <ul 
-                    className="
+                    className={`
                         text-left
                         list-disc
                         list-inside
                         mb-2
                         space-y-1
-                    "
+                    `}
                 >
                     {Props.benefits.map((item) => (
                         <li key={item}
@@ -74,7 +88,6 @@ export function Card(Props: CardProps){
                         py-2
                         px-4
                         border-none
-                        border-yellow-700
                         rounded
                         shadow-md
                 `}
