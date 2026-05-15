@@ -12,13 +12,19 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
     const colors = {
         gold: 'text-yellow-400 border-yellow-400',
         silver: 'text-gray-400 border-gray-400',
-        bronze: 'text-amber-800 border-amber-800',
+        bronze: 'text-orange-600 border-orange-800',
     }
 
     const description_plan = {
         gold: 'The Gold Plan offers the best value with exclusive benefits and premium features, providing an unparalleled experience for our most discerning customers.',
         silver: 'The Silver Plan provides a balanced mix of features and affordability, perfect for those seeking great value without compromising on quality.',
         bronze: 'The Bronze Plan is an affordable option that delivers essential features and benefits, ideal for those looking to get started with our services.'
+    }
+
+    const buttonColors = {
+        gold: 'bg-yellow-600 hover:bg-yellow-500',
+        silver: 'bg-gray-600 hover:bg-gray-400',
+        bronze: 'bg-orange-600 hover:bg-orange-700'
     }
 
     return (
@@ -66,7 +72,7 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
 
         {/* Aqui futuramente entrará o formulário do Stripe/Cartão */}
         <div className="space-y-3">
-          <button className="w-full bg-white text-black font-bold py-3 rounded-xl hover:bg-zinc-200 transition-colors">
+          <button className={`${colors[variant]} w-full bg-zinc-800/50 hover:${buttonColors[variant]} hover:text-black hover:transition-colors hover:duration-400 font-bold py-3 rounded-xl hover:opacity-90 transition-opacity`}>
             Pay with Card
           </button>
           <button 
