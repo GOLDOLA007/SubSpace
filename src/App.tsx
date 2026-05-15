@@ -19,8 +19,8 @@ function App() {
   return (
     <main 
       className={`
+        bg-dark-background
         min-h-screen
-        bg-zinc-950 text-zinc-50
         flex
         flex-col
         items-center
@@ -31,10 +31,8 @@ function App() {
       
       <h1
         className={`
-            text-3xl
             font-bold
             text-center
-            text-zinc-300
             text-4xl
             mb-4
             text-transparent

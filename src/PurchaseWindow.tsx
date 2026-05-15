@@ -24,12 +24,22 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
       />
 
       {/* Caixa do Modal */}
-      <div 
-      style={{
-        backgroundColor: '#121212',
-        boxShadow: '0 0 20px rgba(255, 255, 255, 0.2)',
-      }}
-      className="text-white relative border border-gray-800 border-zinc-800 p-8 rounded-2xl max-w-md w-full shadow-2xl animate-in fade-in zoom-in duration-300">
+      <div className={`
+        relative 
+        bg-[#121212]
+        text-white 
+        border 
+        border-zinc-800 
+        p-8 
+        rounded-2xl 
+        max-w-md 
+        w-full 
+        shadow-[0_0_20px_rgba(255,255,255,0.1)] 
+        animate-in 
+        fade-in 
+        zoom-in 
+        duration-300
+      `}>
         <button 
           onClick={onClose}
           className="absolute top-4 right-4 text-zinc-500 hover:text-white"
