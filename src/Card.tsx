@@ -4,6 +4,7 @@ interface CardProps{
     price: string;
     benefits: string[];
     variant: "gold" | "silver" | "bronze";
+    onClick: () => void;
 }
 
 export function Card(Props: CardProps){
@@ -96,6 +97,7 @@ export function Card(Props: CardProps){
                     `}
                 >
                     <button 
+                    onClick={Props.onClick}
                     className={`
                             w-full
                             ${buttonStyles[Props.variant]}
