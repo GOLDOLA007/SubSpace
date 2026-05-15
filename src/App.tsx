@@ -57,7 +57,7 @@ function App() {
           flex-wrap
           justify-between
           mt-10
-          max-w-3xl
+          max-w-4xl
           mx-auto
           h-full
           items-center
@@ -67,21 +67,21 @@ function App() {
         <Card variant="silver"
           title="SILVER"
           price="$ 49,90"
-          benefits={["Diary content", "Monthly mentoring"]}
+          benefits={["Newsletter", "Exclusive course platform"]}
           onClick={() => handleOpenModal("SILVER", "$ 49,90", "silver")}
         />
 
         <Card variant="gold"
           title="GOLD"
           price="$ 99,90"
-          benefits={["Diary content", "Monthly mentoring", "VIP group"]}
+          benefits={["Newsletter", "Exclusive course platform", "VIP group"]}
           onClick={() => handleOpenModal("GOLD", "$ 99,90", "gold")}
         />
 
         <Card variant="bronze"
           title="BRONZE"
           price="$ 24,90"
-          benefits={["Diary content"]}
+          benefits={["Newsletter"]}
           onClick={() => handleOpenModal("BRONZE", "$ 24,90", "bronze")}
         />    
       </div>
