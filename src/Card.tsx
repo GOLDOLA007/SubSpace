@@ -10,9 +10,9 @@ interface CardProps{
 export function Card(Props: CardProps){
 
     const styles = {
-        bronze: "hover:border-orange-800 shadow-lg shadow-orange-800 text-orange-400 w-48 h-48",
-        silver: "hover:border-gray-600 shadow-lg shadow-gray-800 text-gray-400 w-48 h-48",
-        gold:   "hover:border-yellow-800 shadow-lg shadow-yellow-800 text-yellow-400 w-64 h-64"
+        bronze: "hover:border-orange-800 hover:translate-y-[-5px] hover:transition hover:duration-300 shadow-lg shadow-orange-800 text-orange-400 w-48 h-48",
+        silver: "hover:border-gray-600 hover:translate-y-[-5px] hover:transition hover:duration-300 shadow-lg shadow-gray-600 text-gray-400 w-48 h-48",
+        gold:   "hover:border-yellow-800 hover:translate-y-[-5px] hover:transition hover:duration-300 shadow-lg shadow-yellow-800 text-yellow-400 w-64 h-64"
     }
 
     const buttonStyles = {
@@ -27,7 +27,7 @@ export function Card(Props: CardProps){
                 border 
                 p-5 
                 rounded-lg m-2.5
-                text-center 
+                text-center
                 w-48
                 h-48
                 ${styles[Props.variant]}
@@ -107,6 +107,7 @@ export function Card(Props: CardProps){
                             border-none
                             rounded
                             shadow-md
+                            cursor-pointer
                     `}
                     >{Props.price}</button>
                 </div>

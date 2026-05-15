@@ -29,17 +29,27 @@ function App() {
       `}
     >
       
-      <h1
+      <div
+        className={`
+          w-full
+          h-full
+          flex
+          items-center
+          justify-center
+          mb-10  
+        `}
+      >
+        <h1
         className={`
             font-bold
             text-center
-            text-4xl
+            text-5xl
             mb-4
-            text-transparent
-            bg-clip-text
-            bg-gradient-to-r from-white to-gray-400
+            text-white
         `}
-      >Choose your plan</h1>
+        >Choose your plan</h1>
+      </div>
+      
 
       <div
         className={`
