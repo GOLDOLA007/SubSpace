@@ -53,7 +53,7 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
         </button>
 
         <h2 className={`text-2xl font-black mb-2 ${colors[variant]}`}>
-          Confirm Subscription
+          {title}
         </h2>
         <p className="text-zinc-400 mb-6">
           <span className="font-bold">{description_plan[variant]}</span>
