@@ -15,6 +15,12 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
         bronze: 'text-amber-800 border-amber-800',
     }
 
+    const description_plan = {
+        gold: 'The Gold Plan offers the best value with exclusive benefits and premium features, providing an unparalleled experience for our most discerning customers.',
+        silver: 'The Silver Plan provides a balanced mix of features and affordability, perfect for those seeking great value without compromising on quality.',
+        bronze: 'The Bronze Plan is an affordable option that delivers essential features and benefits, ideal for those looking to get started with our services.'
+    }
+
     return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Overlay: o fundo escuro que fecha o modal ao clicar */}
@@ -34,7 +40,6 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
         rounded-2xl 
         max-w-md 
         w-full 
-        shadow-[0_0_20px_rgba(255,255,255,0.1)] 
         animate-in 
         fade-in 
         zoom-in 
@@ -51,7 +56,7 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
           Confirm Subscription
         </h2>
         <p className="text-zinc-400 mb-6">
-          You are subscribing to the <span className="font-bold text-white">{title}</span> plan.
+          <span className="font-bold">{description_plan[variant]}</span>
         </p>
 
         <div className="bg-zinc-800/50 p-4 rounded-lg mb-6 flex justify-between items-center">
