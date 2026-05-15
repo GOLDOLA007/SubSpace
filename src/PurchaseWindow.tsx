@@ -11,7 +11,7 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
 
     const colors = {
         gold: 'text-yellow-400 border-yellow-400',
-        silver: 'text-gray-400 border-gray-400',
+        silver: 'text-gray-300 border-gray-400',
         bronze: 'text-orange-600 border-orange-800',
     }
 
@@ -24,7 +24,7 @@ export function PurchaseWindow({ title, price, isOpen, onClose, variant }: Purch
     const buttonColors = {
         gold: 'bg-yellow-600 hover:bg-yellow-500',
         silver: 'bg-gray-600 hover:bg-gray-400',
-        bronze: 'bg-orange-600 hover:bg-orange-700'
+        bronze: 'bg-orange-600 hover:bg-orange-600'
     }
 
     return (
